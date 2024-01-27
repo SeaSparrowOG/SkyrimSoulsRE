@@ -8,8 +8,9 @@ namespace Offsets
 		static constexpr REL::ID CenterOnCell_Hook(static_cast<std::uint64_t>(22873));      // + 0x5B
 		static constexpr REL::ID CenterOnWorld_Hook(static_cast<std::uint64_t>(22876));     // + 0x104
 		static constexpr REL::ID CenterOnExterior_Hook(static_cast<std::uint64_t>(22875));  // + 0x109
-		static constexpr REL::ID ServeTime_Hook(static_cast<std::uint64_t>(22628));         // + 0xE
-		static constexpr REL::ID SaveGame_Hook(static_cast<std::uint64_t>(22940));          // + 0xC4
+		//SeaSparrow - Workaround for 1.6.1130+
+		//static constexpr REL::ID ServeTime_Hook(static_cast<std::uint64_t>(22628));         // + 0xE
+		//static constexpr REL::ID SaveGame_Hook(static_cast<std::uint64_t>(22940));          // + 0xC4
 	}
 
 	namespace BGSTerrainManager
@@ -35,6 +36,8 @@ namespace Offsets
 		static constexpr REL::ID Value2(static_cast<std::uint64_t>(388443));
 	}
 
+	//SeaSparrow - 1.6.1130+ workaround
+	/*
 	namespace ItemMenuUpdater
 	{
 		static constexpr REL::ID RequestItemListUpdate(static_cast<std::uint64_t>(52849));
@@ -54,6 +57,7 @@ namespace Offsets
 		static constexpr REL::ID RemoveItem_Hook3(static_cast<std::uint64_t>(24715));  // + 0x472 (6 call) - Actor - when other NPCs interact
 		static constexpr REL::ID RemoveItem_Hook4(static_cast<std::uint64_t>(17887));  // + 0x26A (6 call) - TESObjectREFR - when other NPCs interact
 	}
+	*/
 
 	namespace Menus
 	{
